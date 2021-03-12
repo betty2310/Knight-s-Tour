@@ -33,7 +33,7 @@ void trySolve(int i, int x, int y) {
         int v = y + c[j]; //vi tri cot moi
         if((u>0) && (v>0) && (u<=n) &&( v<=n) && (a[u][v] == 0)) {//kiem tra vi tri thoa man trong bang n*n
             trySolve(i+1, u, v);
-            a[u][v] = 0;
+            a[u][v] = 0; //dat lai vi tri lai thoa man
         }
 
     }
